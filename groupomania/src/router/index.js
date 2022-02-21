@@ -1,19 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import InscriptionView from '../views/FormInscription.vue'
+import FormInscription from '../components/FormInscription.vue'
+import FormConnexion from '../components/FormConnexion.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/inscription',
+    name: 'Inscription',
+    component: FormInscription
   },
   {
-    path: '/inscription',
-    name: 'inscription',
-    component: InscriptionView
+    path: '/connexion',
+    name: 'Connexion',
+    component: FormConnexion
   }
 ]
 

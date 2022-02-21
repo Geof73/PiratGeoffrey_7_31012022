@@ -1,6 +1,6 @@
 <script>
 import NavLink from "./components/NavLink.vue";
-import MessageAccueil from "./views/MessageAccueil.vue";
+import MessageAccueil from "./components/MessageAccueil.vue";
 
 export default {
   name: "App",
@@ -17,10 +17,11 @@ export default {
       <img class="logoNav" src="./assets/icon-above-font.png" />
       <NavLink url="/" text="Accueil" />
       <NavLink url="/#/inscription" text="Inscription" />
-      <NavLink url="/connexion" text="Connexion" />
+      <NavLink url="/#/connexion" text="Connexion" />
       <router-link to="/inscription">Inscription2</router-link>
     </nav>
     <div><MessageAccueil /></div>
+    <router-view/>
   </div>
 </template>
 
